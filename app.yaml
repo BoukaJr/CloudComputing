@@ -1,0 +1,19 @@
+runtime: php55
+api_version: 1
+handlers:
+- url: /stylesheets
+  static_dir: stylesheets
+- url: /
+  script: login.php
+- url: /login
+  script: login.php
+- url: /main
+  script: main.php
+- url: /register
+  script: register.php
+env_variables:
+  MYSQL_USER: root
+  MYSQL_PASSWORD: "quinnroolz"
+  MYSQL_DSN: mysql:dbname=DBNAME;unix_socket=/cloudsql/qcca2
+beta_settings:
+  cloud_sql_instances: "qcca2"
