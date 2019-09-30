@@ -12,12 +12,14 @@
   }
   else{
     ?>
+    <div class="loginpg" style="padding: 250px; text-align: center; font-family: arial; position: center;">
     <form action="/main" method="post">
     <div>Enter Username<textarea name="username" rows="1" cols="10"></textarea></div>
     <div>Enter Password<textarea name="password" rows="1" cols="10"></textarea></div>
     <div><input type="submit" value="Submit"></div>
     <a href="/register">Register</a>
     </form>
+    </div>
     <?php
   }
   session_destroy();
