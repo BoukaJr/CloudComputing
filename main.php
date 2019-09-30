@@ -26,7 +26,7 @@ if($userDeets[0] == $_SESSION['username'] && $userDeets[1] == $_SESSION['passwor
 <?php
 }
 else{
-  echo "User name or password is invalid";
+  echo "User name or password is invalid, please try again";
 }
 fclose($handle);
 
